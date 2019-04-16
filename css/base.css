@@ -1,0 +1,27 @@
+/* Base styles */
+body {
+    font-family: sans-serif;
+}
+
+/* Top header */
+header {
+    position: relative;
+}
+header h1 {
+    background: #ccc;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0 20px 40px;
+}
+header nav {
+    margin-top: -15px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+header .nav-item {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 20px;
+    line-height: 30px;
+}

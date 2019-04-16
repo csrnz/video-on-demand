@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Video on demand</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/vendor/normalize.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/carousel.css">
+        <link rel="stylesheet" href="css/video-overlay.css">
+    </head>
+    <body>
+        <header>
+            <h1>Home</h1>
+            <nav role="navigation">
+                <div class="nav-item">History</div>
+            </nav>
+        </header>
+
+        <section class="carousel-container">
+            <div class="slide-button left"></div>
+            <div class="slide-button right"></div>
+            <div class="carousel">
+                <template class="movie-template">
+                    <div class="movie-item" title="">
+                        <img class="movie-image" src="" alt="">
+                        <div class="movie-title"></div>
+                    </div>
+                </template>
+            </div>
+        </section>
+
+        <div class="video-overlay">
+            <div class="close-button">Close</div>
+            <video class="video" width="480" height="360" controls preload="none"></video>
+        </div>
+        
+        <script src="js/vendor/vanilla.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/video-player.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

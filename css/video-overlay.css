@@ -1,0 +1,29 @@
+/* Video overlay */
+.video-overlay {
+    display: none;
+}
+.video-overlay.visible {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    bottom: 0;
+    display: inline-flex;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+.video-overlay .video {
+    background: #fff;
+    margin: 0 auto;
+}
+.video-overlay .close-button {
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    right: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}

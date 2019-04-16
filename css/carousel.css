@@ -1,0 +1,57 @@
+/* Carousel */
+.carousel-container {
+    position: relative;
+}
+.carousel-container .slide-button {
+    background-color: #fff;
+    background-size: 64px 64px;
+    border-radius: 32px;
+    cursor: pointer;
+    height: 64px;
+    opacity: 0.5;
+    position: fixed;
+    top: 215px;
+    width: 64px;
+    z-index: 2;
+}
+.carousel-container .slide-button:hover {
+    opacity: 0.8;
+}
+.carousel-container .slide-button.left {
+    background-image: url(../img/arrow-left.svg);
+    left: 30px;
+}
+.carousel-container .slide-button.right {
+    background-image: url(../img/arrow-right.svg);
+    right: 30px;
+}
+.carousel {
+    height: 356px;
+    margin: 15px;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+.carousel::-webkit-scrollbar {
+    width: 0;
+}
+.carousel .movie-item {
+    display: inline-block;
+    margin-left: 5px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 214px;
+}
+.carousel .movie-item:first-of-type {
+    margin-left: 0;
+}
+.carousel .movie-title {
+    color: #3c3c3c;
+    font-size: 15px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
